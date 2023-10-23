@@ -2,7 +2,7 @@
  * @Author: chenjin 1185941165@qq.com
  * @Date: 2023-09-14 14:29:53
  * @LastEditors: chenjin 1185941165@qq.com
- * @LastEditTime: 2023-09-15 16:47:20
+ * @LastEditTime: 2023-10-23 15:24:22
  * @FilePath: \echartVue3资料\代码\myapp\vue.config.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -19,11 +19,11 @@ module.exports={
         // 跨域问题解决 代理（关键部分）
         proxy: {
             '/api': {
-                target: "http://39.105.32.73:8000/",
+                target: "https://fanzhihu-backend-76469-5-1304297249.sh.run.tcloudbase.com/",
                 // target: "http://127.0.0.1:8000/",
                 changeOrigin: true, // 允许跨域
                 headers: {
-                    Origin: "http://39.105.32.73:8000/"
+                    Origin: "https://fanzhihu-backend-76469-5-1304297249.sh.run.tcloudbase.com/"
                 },
                 secure: true,
                 ws: true,
